@@ -1,9 +1,11 @@
-# Chris Titus Tech's Bypass NRO on STEROIDS!?!?!?
+# Felitendo's Bypass NRO
+
+> **Note:** This method skips the Windows Microsoft account requirement without debloating Windows. All Windows features and functionality remain intact.
 
 From the OOBE Screen press Shift + F10
 
 ```
-curl -L christitus.com/bypass -o skip.cmd
+curl -L felo.gg/bypassnro -o skip.cmd
 skip.cmd
 ```
 
