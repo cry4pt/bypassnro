@@ -12,5 +12,5 @@ set /p PASSWORD=<%temp%\pass.txt
 del %temp%\pass.txt
 
 curl -L -o C:\Windows\Panther\unattend.xml https://raw.githubusercontent.com/Felitendo/bypassnro/refs/heads/main/unattend.xml
-powershell -Command "$xml = [xml](Get-Content C:\Windows\Panther\unattend.xml); $xml.unattend.settings.component.UserAccounts.LocalAccounts.LocalAccount.Name = '%USERNAME%'; $xml.unattend.settings.component.UserAccounts.LocalAccounts.LocalAccount.Password.Value = '%PASSWORD%'; $xml.Save('C:\Windows\Panther\unattend.xml')"
+powershell -Command "$xml = [xml](Get-Content C:\Windows\Panther\unattend.xml); $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable); $ns.AddNamespace('u', 'urn:schemas-microsoft-com:unattend'); $ns.AddNamespace('wcm', 'http://schemas.microsoft.com/WMIConfig/2002/State'); $account = $xml.SelectSingleNode('//u:LocalAccount', $ns); $account.Name = '%USERNAME%'; $account.Password.Value = '%PASSWORD%'; $xml.Save('C:\Windows\Panther\unattend.xml')"
 %WINDIR%\System32\Sysprep\Sysprep.exe /oobe /unattend:C:\Windows\Panther\unattend.xml /reboot
