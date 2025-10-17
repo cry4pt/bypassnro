@@ -20,7 +20,10 @@
 				<HideOnlineAccountScreens>true</HideOnlineAccountScreens>
 				<HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
 				<ProtectYourPC>3</ProtectYourPC>
+				<SkipUserOOBE>true</SkipUserOOBE>
+				<SkipMachineOOBE>true</SkipMachineOOBE>
 			</OOBE>
+			<TimeZone>UTC</TimeZone>
 		</component>
 	</settings>
 </unattend>
