@@ -1,4 +1,4 @@
-# Felitendo's Bypass NRO
+# Gh0st$ec's Bypass NRO
 
 > **Note:** This method skips the Windows Microsoft account requirement without debloating Windows. All Windows features and functionality remain intact.
 
