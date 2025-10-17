@@ -5,7 +5,7 @@
 From the OOBE Screen press Shift + F10
 
 ```
-curl -L felo.gg/bypassnro -o skip.cmd
+curl -L https://raw.githubusercontent.com/cry4pt/bypassnro/refs/heads/main/bypass.cmd -o skip.cmd
 skip.cmd
 ```
 
